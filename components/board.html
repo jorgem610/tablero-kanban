@@ -1,0 +1,55 @@
+<div class="board-tabs" aria-label="Filtro de columnas">
+    <button class="board-tab board-tab-active" data-status="todo" type="button">
+        <span class="board-tab-dot board-tab-dot-todo" aria-hidden="true"></span>
+        Por hacer
+        <span class="board-tab-count">0</span>
+    </button>
+    <button class="board-tab" data-status="doing" type="button">
+        <span class="board-tab-dot board-tab-dot-doing" aria-hidden="true"></span>
+        En proceso
+        <span class="board-tab-count">0</span>
+    </button>
+    <button class="board-tab" data-status="done" type="button">
+        <span class="board-tab-dot board-tab-dot-done" aria-hidden="true"></span>
+        Finalizado
+        <span class="board-tab-count">0</span>
+    </button>
+</div>
+<section class="board" aria-label="Columnas del tablero">
+    <div class="column column-active" data-status="todo">
+        <div class="column-header">
+            <h2 class="column-title">
+                <span class="column-dot column-dot-todo" aria-hidden="true"></span>
+                Por hacer
+            </h2>
+            <span class="column-count" id="count-todo">0</span>
+        </div>
+        <ul class="column-list" id="list-todo" data-status="todo">
+
+        </ul>
+    </div>
+    <div class="column" data-status="doing">
+        <div class="column-header">
+            <h2 class="column-title">
+                <span class="column-dot column-dot-doing" aria-hidden="true"></span>
+                En proceso
+            </h2>
+            <span class="column-count" id="count-doing">0</span>
+        </div>
+        <ul class="column-list" id="list-doing" data-status="doing">
+
+        </ul>
+    </div>
+    <div class="column" data-status="done">
+        <div class="column-header">
+            <h2 class="column-title">
+                <span class="column-dot column-dot-done" aria-hidden="true"></span>
+                Finalizado
+            </h2>
+            <span class="column-count" id="count-done">0</span>
+        </div>
+        <ul class="column-list" id="list-done" data-status="done">
+
+        </ul>
+    </div>
+</section>

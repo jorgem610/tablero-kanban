@@ -1,0 +1,44 @@
+/* Variables globales*/
+:root {
+
+  /* Color — Primary (violeta) */
+  --color-primary: #8B5CF6;
+  --color-primary-dark: #5B21B6;
+  --color-primary-light: #C4B5FD;
+
+  /*  Color — Secondary (verde)  */
+  --color-secondary: #1DDD91;
+  --color-secondary-dark: #0F7A50;
+  --color-secondary-light: #8FF5CC;
+
+  /*  Color — Tertiary (rojo)  */
+  --color-tertiary: #EF4444;
+  --color-tertiary-dark: #7F1D1D;
+  --color-tertiary-light: #FCA5A5;
+
+  /*  Color — Neutral (grises)  */
+  --color-neutral-900: #0A0A0B;
+  --color-neutral-700: #3A393A;
+  --color-neutral-500: #8A8A8B;
+  --color-neutral-300: #CBC3D7;
+  --color-neutral-100: #F5F5F7;
+
+  /*  Tipografía  */
+  --font-display: 'Geist', sans-serif;
+  --font-body: 'Geist', sans-serif;
+  --font-label: 'JetBrains Mono', monospace;
+
+  /*  Espaciado (escala de 4px)  */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  /*  Radios  */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-full: 999px;
+}

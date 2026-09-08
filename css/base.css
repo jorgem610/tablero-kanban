@@ -1,0 +1,10 @@
+body{
+    background-color: var(--color-neutral-900);
+    color: var(--color-neutral-100);
+    font-family: var(--font-body);
+    font-size: 15px;
+}
+
+h1, h2, h3{
+    font-family: var(--font-display);
+}

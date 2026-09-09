@@ -69,6 +69,36 @@
     display: none;
 }
 
+.task-card {
+  position: relative;
+  display: flex;
+  background-color: var(--color-neutral-900);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  margin-bottom: var(--space-2);
+}
+
+.task-card-priority {
+  width: 4px;
+  flex-shrink: 0;
+}
+
+.task-card-priority-baja {
+  background-color: var(--color-secondary);
+}
+
+.task-card-priority-media {
+  background-color: #F5B942;
+}
+
+.task-card-priority-alta {
+  background-color: var(--color-tertiary);
+}
+
+.task-card-body {
+  padding: var(--space-3);
+}
+
 @media (max-width: 1024px) {
 
   .board-tabs {

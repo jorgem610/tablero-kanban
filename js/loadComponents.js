@@ -27,6 +27,7 @@ async function loadsComponents(){
     for (const placeholder of placeholders){
         await loadComponent(placeholder);
     }
+    document.dispatchEvent(new CustomEvent('components:loaded'));
 }
 
 loadsComponents();

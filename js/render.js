@@ -1,5 +1,6 @@
 import { getTasks } from './api.js';
-function createTaskCard(task) {
+
+export function createTaskCard(task) {
   const template = document.getElementById('task-card-template');
   const card = template.content.cloneNode(true);
 
@@ -34,7 +35,7 @@ async function renderTasks() {
     updateColumnCounts(tasks);
 }
 
-function updateColumnCounts(tasks) {
+export function updateColumnCounts(tasks) {
   const counts = { todo: 0, doing: 0, done: 0 };
 
   tasks.forEach(task => {

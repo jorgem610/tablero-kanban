@@ -99,6 +99,22 @@
   padding: var(--space-3);
 }
 
+.fab-new-task {
+  position: fixed;
+  bottom: var(--space-6);
+  right: var(--space-6);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-5);
+  border-radius: var(--radius-full);
+  background-color: var(--color-primary);
+  color: var(--color-neutral-100);
+  font-weight: 500;
+  box-shadow: 0 4px 16px rgba(139, 92, 246, 0.45);
+  z-index: 30;
+}
+
 @media (max-width: 1024px) {
 
   .board-tabs {
@@ -161,5 +177,9 @@
   .column-active {
     display: flex;
     flex: 1 1 100%;
+  }
+
+  .fab-new-task {
+    display: none;
   }
 }

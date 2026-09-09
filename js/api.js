@@ -17,7 +17,7 @@ export async function getTasks(){
     
 }
 
-async function createTask(taskData){
+export async function createTask(taskData){
     try{
         const response = await fetch(`${API_URL}/tasks`, {
             method: 'POST',

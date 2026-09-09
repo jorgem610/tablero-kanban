@@ -1,0 +1,138 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: var(--space-4);
+}
+
+.modal {
+  width: 100%;
+  max-width: 440px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background-color: var(--color-neutral-700);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+}
+
+.modal-title {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.modal-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  color: var(--color-neutral-300);
+}
+
+.modal-close:hover {
+  background-color: var(--color-neutral-900);
+  color: var(--color-neutral-100);
+}
+
+/* Formulario */
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.field-label {
+  font-size: 13px;
+  color: var(--color-neutral-300);
+}
+
+.field-input {
+  background-color: var(--color-neutral-900);
+  border: 1px solid var(--color-neutral-500);
+  border-radius: var(--radius-sm);
+  padding: var(--space-2) var(--space-3);
+  color: var(--color-neutral-100);
+  font-size: 14px;
+}
+
+.field-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+textarea.field-input {
+  resize: vertical;
+}
+
+/* Selector de prioridad */
+.priority-selector {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.priority-pill {
+  flex: 1;
+  padding: var(--space-2);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-neutral-500);
+  color: var(--color-neutral-300);
+  font-size: 13px;
+  text-align: center;
+}
+
+.priority-active {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-neutral-100);
+}
+
+/* Botones de acción */
+.task-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+.btn {
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-neutral-100);
+}
+
+.btn-ghost {
+  background: none;
+  color: var(--color-neutral-300);
+}
+
+.btn-ghost:hover {
+  background-color: var(--color-neutral-900);
+}
+.modal-overlay[hidden] {
+  display: none;
+}

@@ -13,7 +13,7 @@ export function createTaskCard(task) {
 
   const priorityBar = cardElement.querySelector('.task-card-priority');
   priorityBar.classList.add(`task-card-priority-${task.priority.toLowerCase()}`);
-
+  cardElement.dataset.taskId = task.id;
   return cardElement;
 }
 

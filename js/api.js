@@ -38,7 +38,7 @@ export async function createTask(taskData){
     
 }
 
-async function updateTask(taskId, updates) {
+export async function updateTask(taskId, updates) {
   try {
     const response = await fetch(`${API_URL}/tasks/${taskId}`, {
       method: 'PATCH',

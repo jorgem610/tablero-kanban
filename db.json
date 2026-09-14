@@ -2,27 +2,27 @@
   "tasks": [
     {
       "id": "1",
-      "title": "test34",
+      "title": "Diseñar maqueta en Figma",
       "description": "Crear los wireframes y prototipos interactivos del tablero.",
       "priority": "Alta",
       "dueDate": "2026-09-15",
-      "status": "doing"
-    },
-    {
-      "id": "2",
-      "title": "Configurar json-server",
-      "description": "Iniciar la API simulada con las colecciones de tareas y comentarios.",
-      "priority": "Media",
-      "dueDate": "2026-09-10",
       "status": "todo"
     },
     {
-      "title": "test",
-      "description": "test",
+      "id": "2",
+      "title": "Configurar json-server asdasd",
+      "description": "Iniciar la API simulada con las colecciones de tareas y comentarios.",
       "priority": "Media",
-      "dueDate": "2222-02-10",
+      "dueDate": "2026-09-10",
+      "status": "doing"
+    },
+    {
+      "title": "testmovil",
+      "description": "testmovil",
+      "priority": "Baja",
+      "dueDate": "2026-09-07",
       "status": "done",
-      "id": "9dN3r0l-OWA"
+      "id": "zPMY28ZO7Bg"
     }
   ],
   "comments": [
@@ -41,18 +41,32 @@
       "createdAt": "2026-09-06T11:15:00Z"
     },
     {
-      "taskId": "1",
+      "taskId": "2",
       "author": "Jorge",
-      "text": "pendiente de...",
-      "createdAt": "2026-09-14T10:52:25.680Z",
-      "id": "JPZb2hHeq5c"
+      "text": "test",
+      "createdAt": "2026-09-14T12:06:58.225Z",
+      "id": "5_nPpDx4XEc"
+    },
+    {
+      "taskId": "zPMY28ZO7Bg",
+      "author": "Jorge",
+      "text": "test1",
+      "createdAt": "2026-09-14T12:12:03.374Z",
+      "id": "9eRqa_NqNho"
+    },
+    {
+      "taskId": "zPMY28ZO7Bg",
+      "author": "Jorge",
+      "text": "test2",
+      "createdAt": "2026-09-14T12:12:07.637Z",
+      "id": "Y6f2qAXQ4Ww"
     },
     {
       "taskId": "2",
       "author": "Jorge",
-      "text": "proceso..",
-      "createdAt": "2026-09-14T11:00:43.275Z",
-      "id": "hsZkYBvBXKU"
+      "text": "asdasdas",
+      "createdAt": "2026-09-14T12:14:32.563Z",
+      "id": "JOdSyNj3KFg"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

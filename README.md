@@ -1,6 +1,6 @@
 # FlowBoard — Tablero Kanban
 
-Tablero de gestión de tareas tipo Trello/Kanban, desarrollado para una empresa de software ficticia. Permite organizar tareas en tres columnas (Por Hacer, En Proceso, Finalizado), con drag & drop, comentarios, y una interfaz responsive con estética "developer tool" en modo oscuro.
+Tablero de gestión de tareas tipo Trello/Kanban. Permite organizar tareas en tres columnas (Por Hacer, En Proceso, Finalizado), con drag & drop, comentarios, y una interfaz responsive con estética "developer tool".
 
 ## 🚀 Demo
 

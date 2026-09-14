@@ -79,14 +79,14 @@ export async function deleteTask(taskId) {
 
 export async function getComments(taskId) {
   try {
-    const response = await fetch(`${API_URL}/comments?taskId=${taskId}`);
+    const response = await fetch(`${API_URL}/tasks/${taskId}?_embed=comments`);
 
     if (!response.ok) {
       throw new Error(`Error ${response.status} al obtener los comentarios`);
     }
 
-    const comments = await response.json();
-    return comments;
+    const task = await response.json();
+    return task.comments;
 
   } catch (error) {
     console.error('No se pudieron cargar los comentarios:', error);

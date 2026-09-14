@@ -236,7 +236,6 @@
   background-color: var(--color-neutral-900);
 }
 
-
 .fab-new-task {
   position: fixed;
   bottom: var(--space-6);
@@ -253,6 +252,7 @@
   z-index: 30;
 }
 
+/* ===== Badge del número de comentarios ===== */
 .task-card-comments-btn {
   position: relative;
 }
@@ -277,7 +277,7 @@
   display: none;
 }
 
-
+/* ===== Móvil y tablet ===== */
 @media (max-width: 1024px) {
 
   .board-tabs {

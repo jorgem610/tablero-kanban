@@ -76,3 +76,41 @@ async function deleteTask(taskId) {
     return false;
   }
 }
+
+export async function getComments(taskId) {
+  try {
+    const response = await fetch(`${API_URL}/tasks/${taskId}?_embed=comments`);
+
+    if (!response.ok) {
+      throw new Error(`Error ${response.status} al obtener los comentarios`);
+    }
+
+    const task = await response.json();
+    return task.comments;
+
+  } catch (error) {
+    console.error('No se pudieron cargar los comentarios:', error);
+    return [];
+  }
+}
+
+export async function createComment(commentData) {
+  try {
+    const response = await fetch(`${API_URL}/comments`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(commentData)
+    });
+
+    if (!response.ok) {
+      throw new Error(`Error ${response.status} al crear el comentario`);
+    }
+
+    const comment = await response.json();
+    return comment;
+
+  } catch (error) {
+    console.error('No se pudo crear el comentario:', error);
+    return null;
+  }
+}

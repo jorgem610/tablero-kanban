@@ -1,4 +1,4 @@
-import { getTasks } from './api.js';
+import { getTasks, getComments } from './api.js';
 
 export function createTaskCard(task) {
   const template = document.getElementById('task-card-template');
@@ -14,12 +14,22 @@ export function createTaskCard(task) {
   const priorityBar = cardElement.querySelector('.task-card-priority');
   priorityBar.classList.add(`task-card-priority-${task.priority.toLowerCase()}`);
   cardElement.dataset.taskId = task.id;
+  const commentsCount = task.commentsCount || 0;
+  const commentsCountEl = cardElement.querySelector('.task-card-comments-count');
+  if (commentsCount > 0) {
+    commentsCountEl.textContent = commentsCount;
+    commentsCountEl.hidden = false;
+  }
   return cardElement;
 }
 
 async function renderTasks() {
     const tasks = await getTasks();
     
+    for (const task of tasks) {
+      const comments = await getComments(task.id);
+      task.commentsCount = comments.length;
+    }
     const lists = {
         todo: document.getElementById('list-todo'),
         doing: document.getElementById('list-doing'),

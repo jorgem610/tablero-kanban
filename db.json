@@ -2,11 +2,11 @@
   "tasks": [
     {
       "id": "1",
-      "title": "Diseñar maqueta en Figma",
+      "title": "test34",
       "description": "Crear los wireframes y prototipos interactivos del tablero.",
       "priority": "Alta",
       "dueDate": "2026-09-15",
-      "status": "todo"
+      "status": "doing"
     },
     {
       "id": "2",
@@ -14,7 +14,15 @@
       "description": "Iniciar la API simulada con las colecciones de tareas y comentarios.",
       "priority": "Media",
       "dueDate": "2026-09-10",
-      "status": "doing"
+      "status": "todo"
+    },
+    {
+      "title": "test",
+      "description": "test",
+      "priority": "Media",
+      "dueDate": "2222-02-10",
+      "status": "done",
+      "id": "9dN3r0l-OWA"
     }
   ],
   "comments": [
@@ -31,6 +39,21 @@
       "author": "Carlos Ruiz",
       "text": "Ya subí la paleta de colores al canal de Figma.",
       "createdAt": "2026-09-06T11:15:00Z"
+    },
+    {
+      "taskId": "1",
+      "author": "Jorge",
+      "text": "pendiente de...",
+      "createdAt": "2026-09-14T10:52:25.680Z",
+      "id": "JPZb2hHeq5c"
+    },
+    {
+      "taskId": "2",
+      "author": "Jorge",
+      "text": "proceso..",
+      "createdAt": "2026-09-14T11:00:43.275Z",
+      "id": "hsZkYBvBXKU"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

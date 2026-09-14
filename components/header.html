@@ -15,14 +15,19 @@
                 <a href="#" class="app-nav-link">Ajustes</a>
             </nav>
         </div>
-        <div class="app-header-search">
+        <div class="app-header-search" id="header-search">
             <label class="visually-hidden">Buscar tareas por títulos</label>
-             <svg class="app-header__search-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <svg class="app-header__search-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <circle cx="7" cy="7" r="5.5" stroke="currentColor" stroke-width="1.5"/>
                 <path d="M11.5 11.5L14.5 14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
             </svg>
             <input type="search" id="search-input" class="app-header-search-input" placeholder="Buscar Tareas.." autocomplete="off">
             <kbd class="app-header-search-hint" aria-hidden="true">Ctrl+k</kbd>
+            <button class="icon-btn search-close-btn" id="search-close-btn" aria-label="Cerrar búsqueda" type="button">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M3 3L13 13M13 3L3 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+            </button>
         </div>
         <div class="app-header-actions">
             <button class="icon-btn" aria-label="Notificaciones" type="button">

@@ -1,12 +1,8 @@
 document.addEventListener('components:loaded', () => {
-  console.log('SEARCH: evento recibido');
 
   const searchInput = document.getElementById('search-input');
-  console.log('SEARCH: input encontrado?', searchInput);
 
   searchInput.addEventListener('input', () => {
-    console.log('SEARCH: escribiendo...', searchInput.value);
-
     const query = searchInput.value.toLowerCase();
     const cards = document.querySelectorAll('.task-card');
 
@@ -16,6 +12,27 @@ document.addEventListener('components:loaded', () => {
 
       card.hidden = !matches;
     });
+  });
+
+  // Para movil
+  const searchIcon = document.querySelector('.app-header__search-icon');
+  const headerSearch = document.getElementById('header-search');
+  const closeBtn = document.getElementById('search-close-btn');
+  
+
+  headerSearch.addEventListener('click', () => {
+    const isCloseBtn = event.target.closest('.search-close-btn');
+    if (isCloseBtn) return;
+
+    if (!headerSearch.classList.contains('search-active')) {
+      headerSearch.classList.add('search-active');
+      searchInput.focus();
+    }
+  });
+
+  closeBtn.addEventListener('click', () => {
+    console.log('Se hizo clic en cerrar búsqueda');
+    headerSearch.classList.remove('search-active');
   });
 
 });

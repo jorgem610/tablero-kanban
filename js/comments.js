@@ -76,6 +76,12 @@ document.addEventListener('components:loaded', () => {
         commentsList.appendChild(item);
         commentsEmpty.hidden = true;
         commentForm.reset();
+
+        const card = document.querySelector(`.task-card[data-task-id="${taskId}"]`);
+        const countEl = card.querySelector('.task-card-comments-count');
+        const currentCount = commentsList.children.length;
+        countEl.textContent = currentCount;
+        countEl.hidden = false;
     }
   });
 

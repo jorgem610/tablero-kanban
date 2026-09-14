@@ -5,6 +5,7 @@ document.addEventListener('components:loaded', () => {
 
   const overlay = document.getElementById('new-task-overlay');
   const openBtn = document.getElementById('new-task-btn');
+  const openBtnMobile = document.getElementById('bottom-nav-new-task');
   const closeBtn = document.getElementById('new-task-close-btn');
   const cancelBtn = document.getElementById('new-task-cancel-btn');
 
@@ -17,6 +18,7 @@ document.addEventListener('components:loaded', () => {
   }
 
   openBtn.addEventListener('click', openModal);
+  openBtnMobile.addEventListener('click', openModal);
   closeBtn.addEventListener('click', closeModal);
   cancelBtn.addEventListener('click', closeModal);
 

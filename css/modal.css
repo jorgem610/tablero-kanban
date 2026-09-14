@@ -187,3 +187,8 @@ textarea.field-input {
 .comment-form .field-input {
   flex: 1;
 }
+
+.field-input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}

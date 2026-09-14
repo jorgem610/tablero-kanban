@@ -144,6 +144,10 @@ header {
   color: var(--color-neutral-100);
 }
 
+.search-close-btn {
+  display: none;
+}
+
 @media (max-width: 1024px){
   .app-nav{
     display: none;
@@ -170,5 +174,37 @@ header {
   .app-header__search-icon {
     position: static;
     color: var(--color-neutral-300);
+  }
+
+  .search-close-btn {
+    display: none;
+  }
+
+
+  .app-header-search.search-active {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0 var(--space-4);
+    background-color: var(--color-neutral-900);
+    display: flex;
+    align-items: center;
+    z-index: 10;
+  }
+
+  .app-header-search.search-active .app-header-search-input {
+    display: block;
+    flex: 1;
+    margin: 0 var(--space-2);
+  }
+
+  .app-header-search.search-active .search-close-btn {
+    display: flex;
+  }
+
+  .app-header-search.search-active .app-header-search-hint {
+    display: none;
   }
 }

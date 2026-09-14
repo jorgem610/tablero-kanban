@@ -55,6 +55,13 @@ export function updateColumnCounts(tasks) {
   document.getElementById('count-todo').textContent = counts.todo;
   document.getElementById('count-doing').textContent = counts.doing;
   document.getElementById('count-done').textContent = counts.done;
+
+  const tabs = document.querySelectorAll('.board-tab');
+  tabs.forEach(tab => {
+    const status = tab.dataset.status;
+    const countEl = tab.querySelector('.board-tab-count');
+    countEl.textContent = counts[status];
+  });
 }
 
 document.addEventListener('components:loaded', () => {

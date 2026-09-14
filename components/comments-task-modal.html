@@ -1,0 +1,37 @@
+<div class="modal-overlay" id="task-comments-overlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="task-comments-title">
+
+    <div class="modal-header">
+      <h2 class="modal-title" id="task-comments-title">Comentarios</h2>
+      <button class="modal-close" id="task-comments-close-btn" aria-label="Cerrar" type="button">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M3 3L13 13M13 3L3 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <input type="hidden" id="comments-task-id-input">
+
+    <ul class="comments-list" id="comments-list">
+     
+    </ul>
+    <p class="comments-empty" id="comments-empty" hidden>Todavía no hay comentarios.</p>
+
+    <form id="comment-form" class="comment-form">
+      <label class="visually-hidden" for="comment-input">Escribe un comentario</label>
+      <input type="text" id="comment-input" name="comment" class="field-input" placeholder="Escribe un comentario…" maxlength="240" required autocomplete="off">
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+
+  </div>
+</div>
+
+<template id="comment-template">
+  <li class="comment">
+    <div class="comment-header">
+      <span class="comment-author"></span>
+      <span class="comment-date"></span>
+    </div>
+    <p class="comment-text"></p>
+  </li>
+</template>
